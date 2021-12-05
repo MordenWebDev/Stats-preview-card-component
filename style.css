@@ -1,0 +1,192 @@
+/* font-family-info */
+/* - Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 */
+
+/* ******************************************** */
+
+/* CSS reset  and over all style*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    --background-color: hsl(233, 47%, 7%);
+    --title-color: hsl(0, 0%, 100%);
+    --acent-color: hsl(277, 64%, 61%);
+    --para-color: hsla(0, 0%, 100%, 0.75);
+    --card-background-color: hsl(244, 38%, 16%);
+  
+    background-color: var(--background-color);
+  }
+  /* main section */
+  
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10rem 2rem;
+  
+    justify-content: center;
+    /* background-color: hsl(244, 38%, 16%); */
+    color: var(--title-color);
+  }
+  span {
+    color: var(--acent-color);
+  }
+  main p {
+    color: var(--para-color);
+  }
+  
+  .feature {
+    font-family: "Lexend", sans-serif;
+    font-family: 400;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .feature span {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    color: var(--title-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  /* left card container */
+  
+  .dflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    max-width: 500px;
+    background-color: var(--card-background-color);
+    height: 350px;
+    flex-grow: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+  /* right container image */
+  
+  .blend-image {
+    height: 350px;
+    width: 500px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  
+    background-blend-mode: multiply;
+    background-image: url("/images/image-header-desktop.jpg");
+    background-color: var(--acent-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* section of it offers ush as features */
+  
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    align-content: flex-start;
+    margin-left: -1rem;
+    margin-top: 3rem;
+  }
+  /* paragraph inside the card width */
+  .para-width {
+    width: 350px;
+    margin: 1rem 0rem 0 3rem;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    font-family: 400;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+  
+  /* head line */
+  .title {
+    margin: 1rem 1rem 0 3rem;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  
+  /* media querry */
+  
+  @media only screen and (max-width: 1000px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .dflex {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  
+    .blend-image {
+      border-radius: 0;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    .info {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    .info p {
+      margin: 1rem;
+    }
+    .dflex {
+      height: 100%;
+    }
+    .para-width {
+      text-align: center;
+    }
+  }
+  /* media query for devide screen lower than 580px */
+  
+  @media only screen and (max-width: 580px) {
+    .blend-image {
+      width: 350px;
+      height: 250px;
+    }
+    .dflex {
+      width: 350px;
+    }
+    .para-width {
+      width: 250px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  /* media query for devide screen lower than 350px */
+  @media only screen and (max-width: 350px) {
+    .blend-image {
+      width: 250px;
+      height: 250px;
+    }
+    .dflex {
+      width: 250px;
+      border-top-left-radius: 0;
+    }
+  
+    .para-width {
+      width: 170px;
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 0.7rem;
+    }
+    .title {
+      font-size: 1rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  
