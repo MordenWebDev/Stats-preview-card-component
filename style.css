@@ -78,8 +78,8 @@
     border-bottom-right-radius: 0.5rem;
   
     background-blend-mode: multiply;
-    background-image: url("/images/image-header-desktop.jpg");
-    background-color: hsl(277, 64%, 61%);
+    background-image: url("images/image-header-desktop.jpg");
+    background-color: var(--acent-color);
     background-size: cover;
     background-repeat: no-repeat;
   }
