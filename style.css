@@ -21,13 +21,15 @@
     --card-background-color: hsl(244, 38%, 16%);
   
     background-color: var(--background-color);
+ 
+    /* opacity: 0.5; */
   }
   /* main section */
   
   main {
     display: flex;
     flex-direction: row-reverse;
-    margin: 10rem 2rem;
+    margin: 5rem 2rem;
   
     justify-content: center;
     /* background-color: hsl(244, 38%, 16%); */
@@ -43,7 +45,7 @@
   .feature {
     font-family: "Lexend", sans-serif;
     font-family: 400;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1rem;
   }
   .feature span {
@@ -52,7 +54,7 @@
     color: var(--title-color);
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   
   /* left card container */
@@ -62,9 +64,9 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem;
-    max-width: 500px;
+    max-width: 600px;
     background-color: var(--card-background-color);
-    height: 350px;
+    height: 450px;
     flex-grow: 0;
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
@@ -72,8 +74,8 @@
   /* right container image */
   
   .blend-image {
-    height: 350px;
-    width: 500px;
+    height: 450px;
+    width: 600px;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   
@@ -90,18 +92,19 @@
     justify-content: space-evenly;
     text-transform: uppercase;
     align-content: flex-start;
-    margin-left: -1rem;
-    margin-top: 3rem;
+    margin-left: -3rem;
+    margin-top: 2rem;
+
   }
   /* paragraph inside the card width */
   .para-width {
     width: 350px;
-    margin: 1rem 0rem 0 3rem;
+    margin: -1rem 0rem 0 3rem;
     justify-content: center;
     font-family: "Lexend", sans-serif;
     font-family: 400;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   
   /* head line */
@@ -122,11 +125,14 @@
       justify-content: center;
     }
     .dflex {
+      width: 550px;
+      border-top-left-radius: 0rem;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
     }
   
     .blend-image {
+      width: 550px;
       border-radius: 0;
       border-top-left-radius: 0.5rem;
       border-top-right-radius: 0.5rem;
@@ -137,11 +143,19 @@
     }
     .info p {
       margin: 1rem;
+
     }
     .dflex {
-      height: 100%;
+      height: 600px;
     }
     .para-width {
+      text-align: center;
+      padding: 1rem;
+      margin: 0 auto;
+      margin-top: 1rem;
+      line-height: 1.2rem;
+    }
+    .title{
       text-align: center;
     }
   }
@@ -189,4 +203,7 @@
       margin: 0 auto;
     }
   }
-  
+  /* main{
+    display: none;
+  }
+   */
